@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materialize.css">
+</head>
+<body>
+
+  <nav class="nav-wrapper">
+
+   <div class="container">
+
+      <a href="#" class="brand-logo"> <img src="imagenes/logo del sena.png" height="70px"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="Link/sobremi.html">Sobre mi</a></li>
+          <li><a href="Link/informacion.html">Informacion Personal</a></li>
+          <li><a href="Link/estudios.html">Estudios</a></li>
+          <li><a href="Link/referencias.html">Referencias personales</a></li>
+        </ul>
+
+      <a href="#" data-target="responsive-menu" class="sidenav-trigger right">
+        <i class="material-icons">menu</i>
+      </a>
+
+    </div>
+  </nav>
+
+  <ul id="responsive-menu" class="sidenav">
+    <li><a href="#">Estudios</a></li>
+    <li><a href="#">Referencias personales</a></li>
+    <li><a href="#"></a>Contacto</li>
+
+  </ul>
+
+  <div class="carousel">
+    <a href="#" class="carousel-item">
+      <img src="imagenes/imagen1.jpg">
+    </a>
+
+    <a href="#" class="carousel-item">
+      <img src="imagenes/imagen2.jpg">
+    </a>
+
+    <a href="#" class="carousel-item">
+      <img src="imagenes/imagen3.jpg">
+    </a>
+
+    <a href="#" class="carousel-item">
+      <img src="imagenes/imagen5.jpg" >
+    </a>
+
+    <a href="#" class="carousel-item">
+      <img src="imagenes/imagen6.jpg">
+    </a>
+
+
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    M.AutoInit();
+  </script>
+
+<script>
+  var options={
+    duration:100,
+    padding:100
+  }
+
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+  });
+</script>
+</body>
+</html>
